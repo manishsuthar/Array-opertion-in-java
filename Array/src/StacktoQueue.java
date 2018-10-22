@@ -1,7 +1,4 @@
 import java.util.Scanner;
-
-import java.util.Scanner;
-
 public class StacktoQueue {
     Stack stack = new Stack();
     void readOperation(String[] Arr,int top) {
@@ -57,8 +54,8 @@ public class StacktoQueue {
         tempArr[top] = null;
         j = str.length-1;
         for (int i=1;i< str.length; i++){
-                str[j] = tempArr[i];
-                j--;
+            str[j] = tempArr[i];
+            j--;
         }
         top++;
         readOperation(str,top);
@@ -71,4 +68,3 @@ public class StacktoQueue {
         s.readOperation(str,top);
     }
 }
-
