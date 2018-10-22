@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class StacktoQueue {
     Stack stack = new Stack();
     void readOperation(String[] Arr,int top) {
-        DP.Print("Press 1. Push \n 2.POP \n 3.Print Array \n4. Peek \n 5. Exit");
+        DP.Print("Press 1. Push \n 2.POP\n 3.Print Array \n4. Peek \n 5. Exit");
         Scanner sc = new Scanner(System.in);
         String op = sc.next();
         switch (op) {
