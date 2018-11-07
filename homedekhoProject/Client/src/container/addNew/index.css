@@ -1,0 +1,13 @@
+table{
+    border: 1px solid gray;
+    width: 100%;
+}
+.text-right{
+    float:right;
+}
+.checkbox{
+    float: left;
+}
+.input-inline{
+    display: inline;
+}
