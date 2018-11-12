@@ -7,7 +7,7 @@ import 'react-owl-carousel2/lib/styles.css';
 class View extends Component{
     state={data:{"date":"NONE","parking":true,"image3":"NONE.png","address":"234","image4":"NONE.jpg","city":"NONE",
                       "description":"NONE","ctphone":"NONE","type":"NONE","image1":"NONE.jpg","image2":"NONE.jpg",
-                      "profileimage":"NONE.JPG","ctemail":"NONE","station":true,
+                      "profileimage":"NONE.jpg","ctemail":"NONE","station":true,
                       "ctname":"NONE","id":"NONE","state":"NONE"},
             loaded:false
         }
@@ -78,11 +78,22 @@ class View extends Component{
                                 </tr>
                                 <tr>
                                     <td>
+                                        <p  className="pull-left"><b>Type</b>{this.state.data.type}</p>
+                                    </td>
+                                    <td>
+                                        <p  className="pull-left"><b>Parking</b>{`${this.state.data.parking ? 'YES' :'NO'}`}</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
                                         <p className="pull-left"><b>Description</b>{this.state.data.description}</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td className="pull-left"><p><b>Price</b>{this.state.data.price}</p></td>
+                                    <td className="pull-left"><p><b>Price</b> &#8377; {this.state.data.price}</p></td>
+                                    <td>
+                                        <p  className="pull-left"><b>Near Station</b>{`${this.state.data.station ? 'YES' :'NO'}`}</p>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Contact Details</td>

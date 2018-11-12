@@ -5,7 +5,7 @@
     overflow: hidden;
 }
 .ViewMain{
-    height: 356px;
+    height: 415px;
     background-color: darkslategray;
     display: inline-flex;
     width: 100%;
@@ -30,4 +30,7 @@ table{
 }
 .sliderImage{
     height: auto;
+}
+.silderclass{
+    z-index: 0;
 }
